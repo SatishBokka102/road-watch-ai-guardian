@@ -1,11 +1,14 @@
+
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Eye, Lock, Airplay, Train, ShieldCheck } from 'lucide-react';
+import { Link, useNavigate } from 'react-router-dom';
 import CameraMonitor from '@/components/CameraMonitor';
 
 const Index = () => {
+  const navigate = useNavigate();
   const [demoStatus, setDemoStatus] = useState({
     eyesClosed: false,
     faceRecognized: true,
@@ -14,6 +17,13 @@ const Index = () => {
 
   const toggleDemo = (key: keyof typeof demoStatus) => {
     setDemoStatus(prev => ({ ...prev, [key]: !prev[key] }));
+  };
+
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
@@ -36,10 +46,19 @@ const Index = () => {
             Prevent Accidents. Protect Lives.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="px-8 py-4 text-lg bg-blue-600 hover:bg-blue-700 transition-colors">
+            <Button 
+              size="lg" 
+              className="px-8 py-4 text-lg bg-blue-600 hover:bg-blue-700 transition-colors"
+              onClick={() => scrollToSection('how-it-works')}
+            >
               See How It Works
             </Button>
-            <Button variant="outline" size="lg" className="px-8 py-4 text-lg border-gray-300 hover:bg-gray-50 transition-colors">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="px-8 py-4 text-lg border-gray-300 hover:bg-gray-50 transition-colors"
+              onClick={() => navigate('/demo-request')}
+            >
               Request a Demo
             </Button>
           </div>
@@ -132,7 +151,7 @@ const Index = () => {
       </section>
 
       {/* How It Works */}
-      <section className="py-24 bg-white">
+      <section id="how-it-works" className="py-24 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-16">
             Three Layers of Intelligent Protection
@@ -438,10 +457,19 @@ const Index = () => {
             Looking to implement AI safety across your fleet, airline, or railway?
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="px-8 py-4 text-lg bg-white text-blue-600 hover:bg-gray-100 transition-colors">
+            <Button 
+              size="lg" 
+              className="px-8 py-4 text-lg bg-white text-blue-600 hover:bg-gray-100 transition-colors"
+              onClick={() => navigate('/demo-request')}
+            >
               Book a Pilot Program
             </Button>
-            <Button variant="outline" size="lg" className="px-8 py-4 text-lg border-white text-white hover:bg-white hover:text-blue-600 transition-colors">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="px-8 py-4 text-lg border-white text-white hover:bg-white hover:text-blue-600 transition-colors"
+              onClick={() => navigate('/technical-specs')}
+            >
               Get Technical Specs
             </Button>
           </div>
@@ -458,10 +486,19 @@ const Index = () => {
             Join the revolution in intelligent transportation safety.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="px-8 py-4 text-lg bg-blue-600 hover:bg-blue-700 transition-colors">
+            <Button 
+              size="lg" 
+              className="px-8 py-4 text-lg bg-blue-600 hover:bg-blue-700 transition-colors"
+              onClick={() => navigate('/contact')}
+            >
               Contact Us
             </Button>
-            <Button variant="outline" size="lg" className="px-8 py-4 text-lg border-gray-400 text-gray-200 hover:bg-gray-800 transition-colors">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="px-8 py-4 text-lg border-gray-400 text-gray-200 hover:bg-gray-800 transition-colors"
+              onClick={() => navigate('/download')}
+            >
               Download Brochure
             </Button>
           </div>
