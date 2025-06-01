@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Eye, Lock, Airplay, Train, ShieldCheck } from 'lucide-react';
+import CameraMonitor from '@/components/CameraMonitor';
 
 const Index = () => {
   const [demoStatus, setDemoStatus] = useState({
@@ -265,6 +266,21 @@ const Index = () => {
               </CardContent>
             </Card>
           </div>
+        </div>
+      </section>
+
+      {/* Live Camera Monitoring */}
+      <section className="py-24 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              Live Camera Monitoring
+            </h2>
+            <p className="text-xl text-gray-600">
+              Experience real-time driver monitoring using your device camera with OpenCV AI detection.
+            </p>
+          </div>
+          <CameraMonitor />
         </div>
       </section>
 
