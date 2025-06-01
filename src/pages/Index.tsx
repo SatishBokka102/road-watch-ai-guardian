@@ -1,9 +1,8 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Eye, Lock, Airplane, Train, ShieldCheck } from 'lucide-react';
+import { Eye, Lock, Airplay, Train, ShieldCheck } from 'lucide-react';
 
 const Index = () => {
   const [demoStatus, setDemoStatus] = useState({
@@ -230,7 +229,7 @@ const Index = () => {
               <CardContent className="p-8">
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Airplane className="w-6 h-6 text-green-600" />
+                    <Airplay className="w-6 h-6 text-green-600" />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-gray-900 mb-2">Pilots</h3>
