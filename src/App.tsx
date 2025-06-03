@@ -9,6 +9,7 @@ import Contact from "./pages/Contact";
 import DemoRequest from "./pages/DemoRequest";
 import TechnicalSpecs from "./pages/TechnicalSpecs";
 import DownloadPage from "./pages/Download";
+import ProjectOverview from "./pages/ProjectOverview";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/demo-request" element={<DemoRequest />} />
           <Route path="/technical-specs" element={<TechnicalSpecs />} />
           <Route path="/download" element={<DownloadPage />} />
+          <Route path="/project-overview" element={<ProjectOverview />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
