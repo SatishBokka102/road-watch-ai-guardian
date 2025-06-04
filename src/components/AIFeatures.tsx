@@ -8,15 +8,15 @@ const AIFeatures = () => {
 
   const getFeatureImage = (featureId: string) => {
     const imageMap: { [key: string]: string } = {
-      'face-detection': 'https://images.unsplash.com/photo-1618500304943-2ad5ff2105ec?auto=format&fit=crop&q=80',
-      'eye-tracking': 'https://images.unsplash.com/photo-1578408025805-a28e95b4ca0d?auto=format&fit=crop&q=80',
-      'distraction': 'https://images.unsplash.com/photo-1565043589221-5239aad4be2b?auto=format&fit=crop&q=80',
-      'emotion': 'https://images.unsplash.com/photo-1625243538266-8576bf998957?auto=format&fit=crop&q=80',
-      'time-tracking': 'https://images.unsplash.com/photo-1593109034590-3bbc2f960561?auto=format&fit=crop&q=80',
-      'privacy': 'https://images.unsplash.com/photo-1554474639-4f7aeacbb78f?auto=format&fit=crop&q=80',
-      'logging': 'https://images.unsplash.com/photo-1581417478431-aaa2890a764c?auto=format&fit=crop&q=80'
+      'face-detection': 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&q=80&w=800&h=600',
+      'eye-tracking': 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&q=80&w=800&h=600',
+      'distraction': 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800&h=600',
+      'emotion': 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=800&h=600',
+      'time-tracking': 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=800&h=600',
+      'privacy': 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&q=80&w=800&h=600',
+      'logging': 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&q=80&w=800&h=600'
     };
-    return imageMap[featureId] || 'https://images.unsplash.com/photo-1550089479-fe5e8a398182?auto=format&fit=crop&q=80';
+    return imageMap[featureId] || 'https://images.unsplash.com/photo-1550089479-fe5e8a398182?auto=format&fit=crop&q=80&w=800&h=600';
   };
 
   return (
@@ -60,6 +60,10 @@ const AIFeatures = () => {
                   src={getFeatureImage(feature.id)}
                   alt={feature.title}
                   className="w-full h-full object-cover"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.src = 'https://images.unsplash.com/photo-1550089479-fe5e8a398182?auto=format&fit=crop&q=80&w=800&h=600';
+                  }}
                 />
               </div>
             </div>

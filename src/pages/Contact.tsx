@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Mail, Phone, MapPin, ArrowLeft } from 'lucide-react';
+import { Mail, Phone, MapPin, ArrowLeft, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Contact = () => {
@@ -167,7 +167,28 @@ const Contact = () => {
               <CardContent className="p-6">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
-                    <MapPin className="w-6 h-6 text-purple-600" />
+                    <ExternalLink className="w-6 h-6 text-purple-600" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900">Portfolio</h3>
+                    <a 
+                      href="https://satish-bokka-portfolio-spark.vercel.app/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-blue-600 hover:text-blue-700 underline"
+                    >
+                      View My Work
+                    </a>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-lg">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
+                    <MapPin className="w-6 h-6 text-gray-600" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900">Office</h3>

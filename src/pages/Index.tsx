@@ -368,6 +368,11 @@ const Index = () => {
                     Contact Form
                   </button>
                 </li>
+                <li>
+                  <a href="https://satish-bokka-portfolio-spark.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-blue-600">
+                    Developer Portfolio
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -376,7 +381,7 @@ const Index = () => {
               &copy; {new Date().getFullYear()} WatchAI Guardian. All rights reserved.
             </p>
             <p className="text-sm text-gray-600">
-              Built by Satish ❤️
+              Built by <a href="https://satish-bokka-portfolio-spark.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700">Satish</a> ❤️
             </p>
           </div>
         </div>
