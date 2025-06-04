@@ -42,7 +42,7 @@ const FEATURES = [
   {
     id: 'privacy',
     title: 'Privacy Pause Button',
-    description: 'Give drivers control with a privacy pause feature for when monitoring isn't needed.',
+    description: 'Give drivers control with a privacy pause feature for when monitoring isn\'t needed.',
     icon: Lock,
     color: 'bg-gray-100 text-gray-600'
   },
