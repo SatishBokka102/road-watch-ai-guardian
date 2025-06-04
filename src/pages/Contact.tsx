@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -143,7 +142,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900">Email</h3>
-                    <p className="text-gray-600">contact@aimonitoring.com</p>
+                    <p className="text-gray-600">satishbokka102@gmail.com</p>
                   </div>
                 </div>
               </CardContent>
