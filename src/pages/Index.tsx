@@ -109,13 +109,9 @@ const Index = () => {
           </div>
           <div className="rounded-2xl overflow-hidden shadow-2xl bg-white p-1 border border-gray-100">
             <img
-              src="https://images.unsplash.com/photo-1550089479-fe5e8a398182?auto=format&fit=crop&q=80&w=800&h=600"
-              alt="Driver with AI monitoring system displaying real-time safety analysis"
+              src="/lovable-uploads/b487853a-0fd5-47a9-a060-dfa29ee07b16.png"
+              alt="AI Driver Monitoring System with face recognition, drowsiness detection, and vehicle access control"
               className="w-full h-80 object-cover rounded-xl"
-              onError={(e) => {
-                const target = e.target as HTMLImageElement;
-                target.src = 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800&h=600';
-              }}
             />
           </div>
         </div>
