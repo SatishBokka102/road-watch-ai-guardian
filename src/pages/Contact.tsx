@@ -28,7 +28,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-background">
       <div className="max-w-6xl mx-auto px-6 py-12">
         <Link to="/" className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 mb-8">
           <ArrowLeft className="w-4 h-4" />
@@ -36,10 +36,10 @@ const Contact = () => {
         </Link>
 
         <div className="text-center mb-16">
-          <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
             Contact Us
           </h1>
-          <p className="text-xl text-gray-600">
+          <p className="text-xl text-muted-foreground">
             Ready to implement AI driver monitoring? Let's discuss your needs.
           </p>
         </div>
@@ -47,7 +47,7 @@ const Contact = () => {
         <div className="grid lg:grid-cols-2 gap-12">
           <Card className="border-0 shadow-lg">
             <CardContent className="p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h2>
+              <h2 className="text-2xl font-bold text-foreground mb-6">Get in Touch</h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
@@ -141,8 +141,8 @@ const Contact = () => {
                     <Mail className="w-6 h-6 text-blue-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900">Email</h3>
-                    <p className="text-gray-600">satishbokka102@gmail.com</p>
+                    <h3 className="font-semibold text-foreground">Email</h3>
+                    <p className="text-muted-foreground">satishbokka102@gmail.com</p>
                   </div>
                 </div>
               </CardContent>
@@ -155,8 +155,8 @@ const Contact = () => {
                     <Phone className="w-6 h-6 text-green-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900">Phone</h3>
-                    <p className="text-gray-600">+1 (555) 123-4567</p>
+                    <h3 className="font-semibold text-foreground">Phone</h3>
+                    <p className="text-muted-foreground">+91 8096780014</p>
                   </div>
                 </div>
               </CardContent>
