@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -88,7 +89,7 @@ const Index = () => {
               <Button 
                 variant="outline" 
                 size="lg" 
-                className="px-8 border-gray-300"
+                className="px-8"
                 onClick={() => navigate('/demo-request')}
               >
                 Request a Free Trial
@@ -183,7 +184,7 @@ const Index = () => {
             </p>
           </div>
           
-          <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
+          <div className="bg-card rounded-2xl shadow-lg border border-border overflow-hidden">
             <CameraMonitor />
           </div>
         </div>
@@ -224,44 +225,44 @@ const Index = () => {
       </section>
 
       {/* Future Enhancements */}
-      <section className="py-24 bg-secondary text-secondary-foreground px-6">
+      <section className="py-24 bg-muted px-6">
         <div className="max-w-6xl mx-auto space-y-16">
           <div className="text-center space-y-6">
-            <Badge className="px-3 py-1 bg-blue-800 text-blue-200 border-blue-700 font-medium">
+            <Badge className="px-3 py-1 bg-blue-50 text-blue-600 border-blue-100 font-medium dark:bg-blue-950 dark:text-blue-400 dark:border-blue-800">
               Coming Soon
             </Badge>
-            <h2 className="text-4xl font-bold">Future Enhancements</h2>
+            <h2 className="text-4xl font-bold text-foreground">Future Enhancements</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Our roadmap for even more powerful safety features
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-gray-800/50 p-8 rounded-2xl border border-gray-700">
+            <div className="bg-card p-8 rounded-2xl border border-border">
               <div className="text-3xl mb-6">🌙</div>
-              <h3 className="text-xl font-bold mb-4">Night Vision AI Mode</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl font-bold mb-4 text-foreground">Night Vision AI Mode</h3>
+              <p className="text-muted-foreground">
                 Enhanced infrared monitoring for low-light conditions, ensuring 24/7 driver safety regardless of time or weather.
               </p>
             </div>
-            <div className="bg-gray-800/50 p-8 rounded-2xl border border-gray-700">
+            <div className="bg-card p-8 rounded-2xl border border-border">
               <div className="text-3xl mb-6">💨</div>
-              <h3 className="text-xl font-bold mb-4">CO2-Based Drowsiness Indicators</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl font-bold mb-4 text-foreground">CO2-Based Drowsiness Indicators</h3>
+              <p className="text-muted-foreground">
                 Advanced cabin air quality monitoring to detect dangerous CO2 levels that contribute to driver fatigue.
               </p>
             </div>
-            <div className="bg-gray-800/50 p-8 rounded-2xl border border-gray-700">
+            <div className="bg-card p-8 rounded-2xl border border-border">
               <div className="text-3xl mb-6">🔓</div>
-              <h3 className="text-xl font-bold mb-4">Driver Unlock by Facial ID</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl font-bold mb-4 text-foreground">Driver Unlock by Facial ID</h3>
+              <p className="text-muted-foreground">
                 Secure biometric vehicle access that prevents unauthorized use and eliminates the need for physical keys.
               </p>
             </div>
-            <div className="bg-gray-800/50 p-8 rounded-2xl border border-gray-700">
+            <div className="bg-card p-8 rounded-2xl border border-border">
               <div className="text-3xl mb-6">🔌</div>
-              <h3 className="text-xl font-bold mb-4">Vehicle Control System API</h3>
-              <p className="text-gray-300">
+              <h3 className="text-xl font-bold mb-4 text-foreground">Vehicle Control System API</h3>
+              <p className="text-muted-foreground">
                 Direct integration with vehicle systems for automatic safety interventions when critical alerts are detected.
               </p>
             </div>
@@ -305,14 +306,14 @@ const Index = () => {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <Camera className="h-5 w-5 text-blue-600" />
-                <span className="font-bold text-lg">WatchAI Guardian</span>
+                <span className="font-bold text-lg text-foreground">WatchAI Guardian</span>
               </div>
               <p className="text-sm text-muted-foreground">
                 Advanced AI monitoring system to keep drivers safe and prevent accidents before they happen.
               </p>
             </div>
             <div>
-              <h3 className="font-semibold mb-4">Quick Links</h3>
+              <h3 className="font-semibold mb-4 text-foreground">Quick Links</h3>
               <ul className="space-y-2">
                 <li>
                   <button onClick={() => scrollToSection('how-it-works')} className="text-sm text-muted-foreground hover:text-blue-600">
@@ -337,7 +338,7 @@ const Index = () => {
               </ul>
             </div>
             <div>
-              <h3 className="font-semibold mb-4">Resources</h3>
+              <h3 className="font-semibold mb-4 text-foreground">Resources</h3>
               <ul className="space-y-2">
                 <li>
                   <a href="#" className="text-sm text-muted-foreground hover:text-blue-600">
@@ -347,7 +348,7 @@ const Index = () => {
               </ul>
             </div>
             <div>
-              <h3 className="font-semibold mb-4">Contact</h3>
+              <h3 className="font-semibold mb-4 text-foreground">Contact</h3>
               <ul className="space-y-2">
                 <li>
                   <a href="mailto:satishbokka102@gmail.com" className="text-sm text-muted-foreground hover:text-blue-600">
